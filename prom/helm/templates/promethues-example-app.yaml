@@ -6,7 +6,7 @@ metadata:
   name: prometheus-example-app
   namespace: ns1
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: prometheus-example-app
