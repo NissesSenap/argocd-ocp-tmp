@@ -7,7 +7,7 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: openshift-storage
+    namespace: ns1
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
