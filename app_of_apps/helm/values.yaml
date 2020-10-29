@@ -4,3 +4,6 @@ spec:
   source:
     repoURL: https://github.com/NissesSenap/argocd-ocp-tmp
     targetRevision: HEAD
+  syncPolicy:
+    prune: true
+    heal: true

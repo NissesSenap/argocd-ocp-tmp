@@ -36,9 +36,16 @@ I'm counting that you already have installed helm v3, if not see [here](https://
 
 ### Setup app of apps
 
+Still having a hard time to manage to get the password out of data."admin.password".
+
+oc get secret argocd-cluster -o jsonpath="{.data}"
+
+argocd login argocd-server-argocd.apps-crc.testing --username admin --password superSecret --grpc-web
+
 argocd app create apps \
     --dest-namespace argocd \
     --dest-server https://kubernetes.default.svc \
     --repo https://github.com/NissesSenap/argocd-ocp-tmp.git \
     --path app_of_apps/helm  
+
 argocd app sync apps
