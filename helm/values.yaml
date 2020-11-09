@@ -1,3 +1,4 @@
 source_namespace: openshift-marketplace
 elastic_target_namespace: openshift-operators-redhat
 ns: argocd-managed
+replicas: 1

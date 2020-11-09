@@ -6,7 +6,7 @@ metadata:
   name: prometheus-example-app
   namespace: {{ .Values.ns }}
 spec:
-  replicas: 5
+  replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
       app: prometheus-example-app
